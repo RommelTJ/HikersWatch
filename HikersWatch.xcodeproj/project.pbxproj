@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77A02FFC1AE1D09C00050D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A02FFB1AE1D09C00050D81 /* AppDelegate.swift */; };
+		77A02FFE1AE1D09C00050D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A02FFD1AE1D09C00050D81 /* ViewController.swift */; };
+		77A030011AE1D09C00050D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A02FFF1AE1D09C00050D81 /* Main.storyboard */; };
+		77A030031AE1D09C00050D81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A030021AE1D09C00050D81 /* Images.xcassets */; };
+		77A030061AE1D09C00050D81 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A030041AE1D09C00050D81 /* LaunchScreen.xib */; };
+		77A030121AE1D09C00050D81 /* HikersWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A030111AE1D09C00050D81 /* HikersWatchTests.swift */; };
+		77A0301C1AE1D13100050D81 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A0301B1AE1D13100050D81 /* CoreLocation.framework */; };
+		77A030271AE1D36000050D81 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A030261AE1D36000050D81 /* InterfaceController.swift */; };
+		77A030291AE1D36000050D81 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A030281AE1D36000050D81 /* NotificationController.swift */; };
+		77A0302B1AE1D36000050D81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A0302A1AE1D36000050D81 /* Images.xcassets */; };
+		77A0302F1AE1D36000050D81 /* HikersWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 77A0302E1AE1D36000050D81 /* HikersWatch WatchKit App.app */; };
+		77A030371AE1D36000050D81 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A030351AE1D36000050D81 /* Interface.storyboard */; };
+		77A030391AE1D36000050D81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A030381AE1D36000050D81 /* Images.xcassets */; };
+		77A0303D1AE1D36000050D81 /* HikersWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77A030211AE1D36000050D81 /* HikersWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77A0300C1AE1D09C00050D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77A02FEE1AE1D09C00050D81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A02FF51AE1D09C00050D81;
+			remoteInfo = HikersWatch;
+		};
+		77A030301AE1D36000050D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77A02FEE1AE1D09C00050D81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A0302D1AE1D36000050D81;
+			remoteInfo = "HikersWatch WatchKit App";
+		};
+		77A0303A1AE1D36000050D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77A02FEE1AE1D09C00050D81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A030201AE1D36000050D81;
+			remoteInfo = "HikersWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77A0303C1AE1D36000050D81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77A0303D1AE1D36000050D81 /* HikersWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		77A02FF61AE1D09C00050D81 /* HikersWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikersWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A02FFA1AE1D09C00050D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A02FFB1AE1D09C00050D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77A02FFD1AE1D09C00050D81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77A030001AE1D09C00050D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77A030021AE1D09C00050D81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		77A030051AE1D09C00050D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		77A0300B1AE1D09C00050D81 /* HikersWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikersWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A030101AE1D09C00050D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A030111AE1D09C00050D81 /* HikersWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikersWatchTests.swift; sourceTree = "<group>"; };
+		77A0301B1AE1D13100050D81 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		77A030211AE1D36000050D81 /* HikersWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HikersWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A030241AE1D36000050D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A030251AE1D36000050D81 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		77A030261AE1D36000050D81 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		77A030281AE1D36000050D81 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		77A0302A1AE1D36000050D81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		77A0302E1AE1D36000050D81 /* HikersWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HikersWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A030341AE1D36000050D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A030361AE1D36000050D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		77A030381AE1D36000050D81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77A02FF31AE1D09C00050D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A0301C1AE1D13100050D81 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A030081AE1D09C00050D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A0301E1AE1D36000050D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77A02FED1AE1D09C00050D81 = {
+			isa = PBXGroup;
+			children = (
+				77A0301B1AE1D13100050D81 /* CoreLocation.framework */,
+				77A02FF81AE1D09C00050D81 /* HikersWatch */,
+				77A0300E1AE1D09C00050D81 /* HikersWatchTests */,
+				77A030221AE1D36000050D81 /* HikersWatch WatchKit Extension */,
+				77A030321AE1D36000050D81 /* HikersWatch WatchKit App */,
+				77A02FF71AE1D09C00050D81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77A02FF71AE1D09C00050D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77A02FF61AE1D09C00050D81 /* HikersWatch.app */,
+				77A0300B1AE1D09C00050D81 /* HikersWatchTests.xctest */,
+				77A030211AE1D36000050D81 /* HikersWatch WatchKit Extension.appex */,
+				77A0302E1AE1D36000050D81 /* HikersWatch WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77A02FF81AE1D09C00050D81 /* HikersWatch */ = {
+			isa = PBXGroup;
+			children = (
+				77A02FFB1AE1D09C00050D81 /* AppDelegate.swift */,
+				77A02FFD1AE1D09C00050D81 /* ViewController.swift */,
+				77A02FFF1AE1D09C00050D81 /* Main.storyboard */,
+				77A030021AE1D09C00050D81 /* Images.xcassets */,
+				77A030041AE1D09C00050D81 /* LaunchScreen.xib */,
+				77A02FF91AE1D09C00050D81 /* Supporting Files */,
+			);
+			path = HikersWatch;
+			sourceTree = "<group>";
+		};
+		77A02FF91AE1D09C00050D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77A02FFA1AE1D09C00050D81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77A0300E1AE1D09C00050D81 /* HikersWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				77A030111AE1D09C00050D81 /* HikersWatchTests.swift */,
+				77A0300F1AE1D09C00050D81 /* Supporting Files */,
+			);
+			path = HikersWatchTests;
+			sourceTree = "<group>";
+		};
+		77A0300F1AE1D09C00050D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77A030101AE1D09C00050D81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77A030221AE1D36000050D81 /* HikersWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				77A030261AE1D36000050D81 /* InterfaceController.swift */,
+				77A030281AE1D36000050D81 /* NotificationController.swift */,
+				77A0302A1AE1D36000050D81 /* Images.xcassets */,
+				77A030231AE1D36000050D81 /* Supporting Files */,
+			);
+			path = "HikersWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		77A030231AE1D36000050D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77A030241AE1D36000050D81 /* Info.plist */,
+				77A030251AE1D36000050D81 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77A030321AE1D36000050D81 /* HikersWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				77A030351AE1D36000050D81 /* Interface.storyboard */,
+				77A030381AE1D36000050D81 /* Images.xcassets */,
+				77A030331AE1D36000050D81 /* Supporting Files */,
+			);
+			path = "HikersWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		77A030331AE1D36000050D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77A030341AE1D36000050D81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77A02FF51AE1D09C00050D81 /* HikersWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A030151AE1D09C00050D81 /* Build configuration list for PBXNativeTarget "HikersWatch" */;
+			buildPhases = (
+				77A02FF21AE1D09C00050D81 /* Sources */,
+				77A02FF31AE1D09C00050D81 /* Frameworks */,
+				77A02FF41AE1D09C00050D81 /* Resources */,
+				77A0303C1AE1D36000050D81 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A0303B1AE1D36000050D81 /* PBXTargetDependency */,
+			);
+			name = HikersWatch;
+			productName = HikersWatch;
+			productReference = 77A02FF61AE1D09C00050D81 /* HikersWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77A0300A1AE1D09C00050D81 /* HikersWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A030181AE1D09C00050D81 /* Build configuration list for PBXNativeTarget "HikersWatchTests" */;
+			buildPhases = (
+				77A030071AE1D09C00050D81 /* Sources */,
+				77A030081AE1D09C00050D81 /* Frameworks */,
+				77A030091AE1D09C00050D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A0300D1AE1D09C00050D81 /* PBXTargetDependency */,
+			);
+			name = HikersWatchTests;
+			productName = HikersWatchTests;
+			productReference = 77A0300B1AE1D09C00050D81 /* HikersWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77A030201AE1D36000050D81 /* HikersWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A030411AE1D36000050D81 /* Build configuration list for PBXNativeTarget "HikersWatch WatchKit Extension" */;
+			buildPhases = (
+				77A0301D1AE1D36000050D81 /* Sources */,
+				77A0301E1AE1D36000050D81 /* Frameworks */,
+				77A0301F1AE1D36000050D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A030311AE1D36000050D81 /* PBXTargetDependency */,
+			);
+			name = "HikersWatch WatchKit Extension";
+			productName = "HikersWatch WatchKit Extension";
+			productReference = 77A030211AE1D36000050D81 /* HikersWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		77A0302D1AE1D36000050D81 /* HikersWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A0303E1AE1D36000050D81 /* Build configuration list for PBXNativeTarget "HikersWatch WatchKit App" */;
+			buildPhases = (
+				77A0302C1AE1D36000050D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HikersWatch WatchKit App";
+			productName = "HikersWatch WatchKit App";
+			productReference = 77A0302E1AE1D36000050D81 /* HikersWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77A02FEE1AE1D09C00050D81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Rommel Rico";
+				TargetAttributes = {
+					77A02FF51AE1D09C00050D81 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					77A0300A1AE1D09C00050D81 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 77A02FF51AE1D09C00050D81;
+					};
+					77A030201AE1D36000050D81 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					77A0302D1AE1D36000050D81 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 77A02FF11AE1D09C00050D81 /* Build configuration list for PBXProject "HikersWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77A02FED1AE1D09C00050D81;
+			productRefGroup = 77A02FF71AE1D09C00050D81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77A02FF51AE1D09C00050D81 /* HikersWatch */,
+				77A0300A1AE1D09C00050D81 /* HikersWatchTests */,
+				77A030201AE1D36000050D81 /* HikersWatch WatchKit Extension */,
+				77A0302D1AE1D36000050D81 /* HikersWatch WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77A02FF41AE1D09C00050D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A030011AE1D09C00050D81 /* Main.storyboard in Resources */,
+				77A030061AE1D09C00050D81 /* LaunchScreen.xib in Resources */,
+				77A030031AE1D09C00050D81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A030091AE1D09C00050D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A0301F1AE1D36000050D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A0302F1AE1D36000050D81 /* HikersWatch WatchKit App.app in Resources */,
+				77A0302B1AE1D36000050D81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A0302C1AE1D36000050D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A030371AE1D36000050D81 /* Interface.storyboard in Resources */,
+				77A030391AE1D36000050D81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77A02FF21AE1D09C00050D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A02FFE1AE1D09C00050D81 /* ViewController.swift in Sources */,
+				77A02FFC1AE1D09C00050D81 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A030071AE1D09C00050D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A030121AE1D09C00050D81 /* HikersWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A0301D1AE1D36000050D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A030291AE1D36000050D81 /* NotificationController.swift in Sources */,
+				77A030271AE1D36000050D81 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77A0300D1AE1D09C00050D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A02FF51AE1D09C00050D81 /* HikersWatch */;
+			targetProxy = 77A0300C1AE1D09C00050D81 /* PBXContainerItemProxy */;
+		};
+		77A030311AE1D36000050D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A0302D1AE1D36000050D81 /* HikersWatch WatchKit App */;
+			targetProxy = 77A030301AE1D36000050D81 /* PBXContainerItemProxy */;
+		};
+		77A0303B1AE1D36000050D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A030201AE1D36000050D81 /* HikersWatch WatchKit Extension */;
+			targetProxy = 77A0303A1AE1D36000050D81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77A02FFF1AE1D09C00050D81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77A030001AE1D09C00050D81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77A030041AE1D09C00050D81 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77A030051AE1D09C00050D81 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		77A030351AE1D36000050D81 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77A030361AE1D36000050D81 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77A030131AE1D09C00050D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77A030141AE1D09C00050D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77A030161AE1D09C00050D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikersWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77A030171AE1D09C00050D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikersWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77A030191AE1D09C00050D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HikersWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikersWatch.app/HikersWatch";
+			};
+			name = Debug;
+		};
+		77A0301A1AE1D09C00050D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HikersWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikersWatch.app/HikersWatch";
+			};
+			name = Release;
+		};
+		77A0303F1AE1D36000050D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = HikersWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HikersWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		77A030401AE1D36000050D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = HikersWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HikersWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		77A030421AE1D36000050D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HikersWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77A030431AE1D36000050D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HikersWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77A02FF11AE1D09C00050D81 /* Build configuration list for PBXProject "HikersWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A030131AE1D09C00050D81 /* Debug */,
+				77A030141AE1D09C00050D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A030151AE1D09C00050D81 /* Build configuration list for PBXNativeTarget "HikersWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A030161AE1D09C00050D81 /* Debug */,
+				77A030171AE1D09C00050D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77A030181AE1D09C00050D81 /* Build configuration list for PBXNativeTarget "HikersWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A030191AE1D09C00050D81 /* Debug */,
+				77A0301A1AE1D09C00050D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77A0303E1AE1D36000050D81 /* Build configuration list for PBXNativeTarget "HikersWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A0303F1AE1D36000050D81 /* Debug */,
+				77A030401AE1D36000050D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77A030411AE1D36000050D81 /* Build configuration list for PBXNativeTarget "HikersWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A030421AE1D36000050D81 /* Debug */,
+				77A030431AE1D36000050D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77A02FEE1AE1D09C00050D81 /* Project object */;
+}
