@@ -14,9 +14,25 @@ import CoreLocation
 class InterfaceController: WKInterfaceController, CLLocationManagerDelegate {
     
     var locationManager = CLLocationManager()
+    var userlocationInfo = [String]()
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        println(locations)
+        let locationArray = locations as NSArray
+        let location = locationArray.lastObject as! CLLocation
+        
+        userlocationInfo.removeAll(keepCapacity: true)
+        //Get latitude
+        userlocationInfo.append("\(location.coordinate.latitude)")
+        //Get longitude
+        userlocationInfo.append("\(location.coordinate.longitude)")
+        //Get altitude
+        userlocationInfo.append("\(location.altitude)")
+        //Get speed
+        userlocationInfo.append("\(location.speed)")
+        //Get course
+        userlocationInfo.append("\(location.course)")
+        
+        println(userlocationInfo)
     }
 
     override func awakeWithContext(context: AnyObject?) {
